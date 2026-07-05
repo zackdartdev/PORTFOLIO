@@ -88,7 +88,7 @@ const TRANSLATIONS = {
       "Liderança técnica e operacional na entrega de services e projetos para mais de 30 empresas e clientes atendidos, gerenciando lançamentos de cursos de grande escala e implementando landing pages, sites institucionais e automações de processos.",
       "Utilização estratégica de Inteligências Artificiais avançadas para otimizar fluxos de desenvolvimento e engenharia de prompt para automação de tarefas administrativas complexas.",
       "Centralização da governança de projetos, mapeamento de fluxos organizacionais e documentação de processos utilizando o Notion para garantir a eficiência das equipes.",
-      "Condução autônoma de rotinas administrativas, gestão de prazos e reuniões de negociação internacionais, prestando atendimento direto a clientes estrangeiros e imigrantes em regime 100% remoto para países como Suíça, França, EUA, Portugal e Brasil.",
+      "Condução autônoma de rotinas administrativas, gestão de prazos e reuniões de negociação internacionais, prestando atendimento direto a clientes estrangeiros e imigrantes em regime 100% remoto para países como Suíça, Alemanha, França, EUA, Portugal e Brasil.",
       "Desenho e estruturação técnica completa de um projeto de ecossistema empresarial moderno (aplicativo integrado de alta complexidade), sendo o único responsável pela formatação e defesa do orçamento estratégico avaliado entre R$ 60k e R$ 75k."
     ],
     expConsultingTitle: "Consultoria e Inteligência de Processos Baseada em TI",
@@ -176,7 +176,7 @@ const TRANSLATIONS = {
       "Technical and operational leadership in project delivery for over 30 clients, managing large-scale course launches and implementing high-traffic landing pages, institutional portals, and custom automated processes.",
       "Strategic utilization of advanced Artificial Intelligence models to optimize coding pipelines and prompt engineering to automate highly complex administrative tasks.",
       "Centralized project governance, workflow mapping, and process documentation using Notion to guarantee team efficiency and transparency.",
-      "Autonomous handling of administrative routines, deadlines, and international negotiation meetings, serving foreign clients and expats 100% remotely across Switzerland, France, USA, Portugal, and Brazil.",
+      "Autonomous handling of administrative routines, deadlines, and international negotiation meetings, serving foreign clients and expats 100% remotely across Switzerland, Germany, France, USA, Portugal, and Brazil.",
       "Complete design and technical structuring of a modern corporate ecosystem (highly complex integrated application), being solely responsible for formatting and defending the strategic budget valued between R$ 60k and R$ 75k."
     ],
     expConsultingTitle: "IT-Based Process Consulting & Intelligence",
