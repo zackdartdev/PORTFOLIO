@@ -1,196 +1,196 @@
 import React, { useState } from "react";
-import { 
-  ArrowUpRight, 
-  Award, 
-  Crown, 
-  X, 
-  Sliders, 
-  Cpu, 
-  Sparkles, 
-  Volume2, 
-  VolumeX, 
-  Layers, 
-  Send, 
-  CheckCircle2, 
-  ArrowRight, 
-  Info, 
-  ShieldCheck, 
-  MessageSquare, 
-  Terminal, 
-  FileText, 
-  BookOpen, 
-  Briefcase, 
-  Activity, 
-  Globe, 
+import {
+  ArrowUpRight,
+  Award,
+  Crown,
+  X,
+  Sliders,
+  Cpu,
+  Sparkles,
+  Volume2,
+  VolumeX,
+  Layers,
+  Send,
+  CheckCircle2,
+  ArrowRight,
+  Info,
+  ShieldCheck,
+  MessageSquare,
+  Terminal,
+  FileText,
+  BookOpen,
+  Briefcase,
+  Activity,
+  Globe,
   Layers3,
   Coins,
   AlertCircle
 } from "lucide-react";
 
-// Dicionário de traduções completas PT e EN
+// DicionÃ¡rio de traduÃ§Ãµes completas PT e EN
 const TRANSLATIONS = {
   PT: {
-    heroTag: "Especialista em TI & Operações Estratégicas",
+    heroTag: "Analista de TI & OperaÃ§Ãµes EstratÃ©gicas",
     heroHeading1: "Zack",
-    heroHeading2: "Neural",
-    heroHeading3: "Engine.",
-    heroSubtext: "Articulando inteligência de dados, engenharia de software, sólidos fundamentos jurídicos e governança de processos para blindar e escalar operações corporativas.",
-    heroBadge: "TI Orientada a Gestão Empresarial, BI e Análise de Risco",
+    heroHeading2: "Enterprise",
+    heroHeading3: "Studios.",
+    heroSubtext: "Articulando inteligÃªncia de dados, engenharia de software, sÃ³lidos fundamentos jurÃ­dicos e gestÃ£o administrativa de processos para escalar operaÃ§Ãµes corporativas.",
+    heroBadge: "TI Orientada a GestÃ£o Empresarial, BI e AnÃ¡lise de Risco",
     aboutTitle: "SOBRE MIM",
-    aboutSub: "Operando na fronteira entre tecnologia, governança e compliance.",
-    aboutText1: "Meu nome é Isaac Lamego, sou um profissional multidisciplinar que opera na intersecção entre a tecnologia avançada, a governança corporativa e o compliance regulatório. Com uma sólida base analítica moldada em sistemas, direcionei minha carreira para a gestão estratégica, auditoria de processos e inteligência de negócios.",
-    aboutText2: "Minha trajetória é marcada por um instinto natural de liderança, alta capacidade de julgamento e tomada de decisão sob pressão, competências validadas por uma altíssima velocidade de retenção e aplicação prática de conteúdos complexos. Possuo amplo domínio de rotinas de administração geral, pública e contabilidade, além de uma base jurídica robusta (com aprovação em tempo recorde em concursos de nível superior, gabaritando frentes de Direito Administrativo, Constitucional, Civil, Penal e Processual Penal). Com comunicação assertiva, excelente oratória e inglês avançado/fluente, sou especialista em gerenciar metas agressivas, conduzir reuniões executivas e estruturar operações 100% remotas em nível internacional.",
-    
-    skillsTitle: "ÁREAS DE ESPECIALIDADE",
-    skillsSub: "Competências e arquitetura tecnológica aplicada a negócios",
+    aboutSub: "Operando na interseÃ§Ã£o entre tecnologia e gestÃ£o administrativa.",
+    aboutText1: "Meu nome Ã© Isaac Lamego, sou um profissional multidisciplinar com atuaÃ§Ã£o na interseÃ§Ã£o entre tecnologia e gestÃ£o administrativa. Com sÃ³lida base analÃ­tica moldada em sistemas, direciono minha carreira para a gestÃ£o de processos, o suporte administrativo e a inteligÃªncia de negÃ³cios.",
+    aboutText2: "Tenho instinto de lideranÃ§a, boa capacidade de julgamento e tomada de decisÃ£o sob pressÃ£o, aliados Ã  alta velocidade de retenÃ§Ã£o e aplicaÃ§Ã£o prÃ¡tica de conteÃºdos complexos. Possuo domÃ­nio de rotinas de administraÃ§Ã£o geral, pÃºblica e contabilidade, alÃ©m de base jurÃ­dica sÃ³lida, com conhecimento aplicado em Direito Administrativo, Constitucional, Civil, Penal e Processual Penal. Com comunicaÃ§Ã£o assertiva, boa oratÃ³ria e inglÃªs avanÃ§ado (escrito e falado), tenho experiÃªncia em gerenciar metas, conduzir reuniÃµes executivas e apoiar operaÃ§Ãµes remotas em nÃ­vel internacional.",
+
+    skillsTitle: "ÃREAS DE ATUAÃ‡ÃƒO",
+    skillsSub: "CompetÃªncias e tecnologia aplicadas a negÃ³cios",
     skills: [
       {
-        title: "Analista de TI e Automações",
-        desc: "Engenharia e arquitetura de soluções, criação de infraestruturas digitais, sites, landing pages e automações inteligentes de fluxos de trabalho para eliminar gargalos operacionais."
+        title: "AnÃ¡lise de TI e AutomaÃ§Ãµes",
+        desc: "Suporte Ã  engenharia e arquitetura de soluÃ§Ãµes, criaÃ§Ã£o de infraestruturas digitais, sites, landing pages e automaÃ§Ãµes de fluxos de trabalho para reduzir gargalos operacionais."
       },
       {
-        title: "Engenharia de IA e Ferramentas Modernas",
-        desc: "Alta proficiência no uso eficiente e combinado das LLMs mais potentes do mercado para os mais determinados fins. Domínio avançado do Claude e seus modelos mais poderosos, além de plataformas de ponta como Bolt.new, Lovable e Midjourney, acelerando o ciclo de desenvolvimento e a criação de produtos digitais de alto impacto."
+        title: "Ferramentas de IA e Tecnologias Modernas",
+        desc: "Uso combinado de LLMs de mercado (com foco em Claude e seus modelos) e plataformas como Bolt.new, Lovable e Midjourney, para acelerar o ciclo de desenvolvimento e a criaÃ§Ã£o de produtos digitais."
       },
       {
-        title: "Gestão de Processos e Ferramentas",
-        desc: "Organização de fluxos de trabalho, documentação avançada e modelagem de processos utilizando o Notion como central de inteligência operacional e agilidade de equipes (Business Agility)."
+        title: "GestÃ£o de Processos e Ferramentas",
+        desc: "OrganizaÃ§Ã£o de fluxos de trabalho, documentaÃ§Ã£o e modelagem de processos utilizando o Notion como central de inteligÃªncia operacional e apoio Ã  agilidade de equipes (Business Agility)."
       },
       {
-        title: "Conhecimento Técnico em ERPs",
-        desc: "Compreensão técnica aprofundada da estrutura, parametrização, fluxos de dados e lógica interna das principais plataformas de mercado, como Protheus, Tasy, ERP Sênior e 4medic."
+        title: "Conhecimento TÃ©cnico em ERPs",
+        desc: "Entendimento da estrutura, parametrizaÃ§Ã£o, fluxos de dados e lÃ³gica interna de plataformas como Protheus, Tasy, ERP SÃªnior e 4medic."
       },
       {
-        title: "Auditoria, Riscos e Compliance",
-        desc: "Interpretação legal, aplicação de controles internos, gerenciamento de contratos complexos e segurança da informação aplicados a ecossistemas corporativos."
+        title: "GestÃ£o Administrativa, Auditoria e Riscos",
+        desc: "InterpretaÃ§Ã£o de normas legais, aplicaÃ§Ã£o de controles internos, apoio Ã  gestÃ£o de contratos e atenÃ§Ã£o Ã  seguranÃ§a da informaÃ§Ã£o em ambientes corporativos."
       },
       {
-        title: "Gestão Orçamentária e Negociação",
-        desc: "Capacidade autônoma de precificação, estruturação técnica e defesa de propostas comerciais de grande porte perante tomadores de decisão nacionais e estrangeiros."
+        title: "GestÃ£o OrÃ§amentÃ¡ria e NegociaÃ§Ã£o",
+        desc: "Apoio na precificaÃ§Ã£o, estruturaÃ§Ã£o tÃ©cnica e defesa de propostas comerciais junto a tomadores de decisÃ£o nacionais e estrangeiros."
       }
     ],
 
-    eduTitle: "FORMAÇÃO ACADÊMICA",
-    eduSub: "Fundamentação científica e estratégica",
-    edu1_title: "Análise e Desenvolvimento de Sistemas (ADS)",
-    edu1_focus: "Foco: Lógica analítica, modelagem de processos, segurança da informação e engenharia de software aplicada a negócios.",
-    edu2_title: "MBA em Gestão Empresarial e Estratégia Competitiva",
-    edu2_institution: "IBMR / HSM University (HSMu)",
-    edu2_focus: "Foco: Business Agility, inteligência competitiva, liderança corporativa, governança e tomada de decisão orientada a dados (Data-Driven).",
+    eduTitle: "FORMAÃ‡ÃƒO ACADÃŠMICA",
+    eduSub: "FundamentaÃ§Ã£o cientÃ­fica e estratÃ©gica",
+    edu1_title: "AnÃ¡lise e Desenvolvimento de Sistemas (ADS)",
+    edu1_focus: "IBMR Â· Em conclusÃ£o (Ãºltima avaliaÃ§Ã£o pendente). Complemento: Processos Gerenciais (IBMR, em conclusÃ£o). Foco: lÃ³gica analÃ­tica, modelagem de processos, integraÃ§Ã£o de operaÃ§Ãµes e qualidade.",
+    edu2_title: "MBA em GestÃ£o Empresarial e EstratÃ©gia Competitiva",
+    edu2_institution: "HSM University (HSMu) Â· InÃ­cio apÃ³s o ADS",
+    edu2_focus: "Foco: gestÃ£o empresarial, Business Agility, inteligÃªncia competitiva, lideranÃ§a corporativa, gestÃ£o administrativa e tomada de decisÃ£o orientada a dados.",
 
-    expTitle: "EXPERIÊNCIA PROFISSIONAL",
-    expSub: "Aplicações práticas em cargo de estrita confiança",
+    expTitle: "EXPERIÃŠNCIA PROFISSIONAL",
+    expSub: "AplicaÃ§Ãµes prÃ¡ticas em cargo de confianÃ§a",
     expCompany: "SkyVision Creative Studio",
     expRole: "Analista de TI, Processos e Suporte Administrativo (Contractor)",
-    expPeriod: "Junho de 2024 – Presente",
+    expPeriod: "Junho de 2024 â€“ Presente",
     expPoints: [
-      "Responsável único por toda a infraestrutura de TI da agência de marketing internacional, atuando em cargo de estrita confiança da liderança executiva com autonomia total para tomada de decisões administrativas junto à CEO.",
-      "Liderança técnica e operacional na entrega de services e projetos para mais de 30 empresas e clientes atendidos, gerenciando lançamentos de cursos de grande escala e implementando landing pages, sites institucionais e automações de processos.",
-      "Utilização estratégica de Inteligências Artificiais avançadas para otimizar fluxos de desenvolvimento e engenharia de prompt para automação de tarefas administrativas complexas.",
-      "Centralização da governança de projetos, mapeamento de fluxos organizacionais e documentação de processos utilizando o Notion para garantir a eficiência das equipes.",
-      "Condução autônoma de rotinas administrativas, gestão de prazos e reuniões de negociação internacionais, prestando atendimento direto a clientes estrangeiros e imigrantes em regime 100% remoto para países como Suíça, Alemanha, França, EUA, Portugal e Brasil.",
-      "Desenho e estruturação técnica completa de um projeto de ecossistema empresarial moderno (aplicativo integrado de alta complexidade), sendo o único responsável pela formatação e defesa do orçamento estratégico avaliado entre R$ 60k e R$ 75k."
+      "ResponsÃ¡vel pela infraestrutura de TI de uma empresa internacional de serviÃ§os digitais, atuando com autonomia junto Ã  lideranÃ§a executiva em decisÃµes administrativas e operacionais.",
+      "Apoio tÃ©cnico e operacional na entrega de serviÃ§os e projetos para mais de 30 empresas atendidas, incluindo lanÃ§amentos de cursos de grande escala, landing pages, sites institucionais e automaÃ§Ãµes de processos.",
+      "Uso estratÃ©gico de inteligÃªncias artificiais para otimizar fluxos de desenvolvimento e engenharia de prompt aplicada a tarefas administrativas.",
+      "CentralizaÃ§Ã£o da gestÃ£o administrativa de projetos, mapeamento de fluxos organizacionais e documentaÃ§Ã£o de processos no Notion para apoiar a eficiÃªncia das equipes.",
+      "ConduÃ§Ã£o de rotinas administrativas, gestÃ£o de prazos e reuniÃµes de negociaÃ§Ã£o internacionais, com atendimento direto a clientes estrangeiros em regime 100% remoto (SuÃ­Ã§a, Alemanha, FranÃ§a, EUA, Portugal e Brasil).",
+      "EstruturaÃ§Ã£o tÃ©cnica de um projeto de ecossistema empresarial (aplicativo integrado de alta complexidade), incluindo a formataÃ§Ã£o e defesa de orÃ§amento estratÃ©gico entre R$ 60k e R$ 75k."
     ],
-    expConsultingTitle: "Consultoria e Inteligência de Processos Baseada em TI",
+    expConsultingTitle: "Consultoria de TI e Processos",
     expConsultingPoints: [
-      "Aplicação de conhecimento técnico em informática avançada e banco de dados para analisar rotinas administrativas, traduzindo regras de compliance contábil e de negócios para possíveis otimizações em sistemas corporativos.",
-      "Estudo detalhado e aptidão para desenhar a lógica de funcionamento e integração de dados necessários para alimentar ecossistemas de ERP (Protheus, Tasy, Sênior e 4medic), mitigando gargalos operacionais antes da implementação técnica."
+      "AplicaÃ§Ã£o de conhecimento em informÃ¡tica e banco de dados para analisar rotinas administrativas, traduzindo regras contÃ¡beis e de gestÃ£o administrativa em oportunidades de otimizaÃ§Ã£o de sistemas.",
+      "Estudo da lÃ³gica de funcionamento e integraÃ§Ã£o de dados de ecossistemas de ERP (Protheus, Tasy, SÃªnior e 4medic), identificando gargalos operacionais antes da implementaÃ§Ã£o tÃ©cnica."
     ],
 
-    interestTitle: "ÁREAS DE INTERESSE",
+    interestTitle: "ÃREAS DE INTERESSE",
     interestsList: [
-      "Auditoria de Sistemas, Riscos e Compliance Corporativo",
-      "Gestão de Operações de TI e Transformação Digital",
-      "Análise de Performance Corporativa e Planejamento Estratégico",
-      "Coordenação de Projetos Corporativos e Gestão de Equipes Híbridas"
+      "Auditoria de Sistemas, Riscos e GestÃ£o Administrativa",
+      "GestÃ£o de OperaÃ§Ãµes de TI e TransformaÃ§Ã£o Digital",
+      "AnÃ¡lise de Performance Corporativa e Planejamento EstratÃ©gico",
+      "CoordenaÃ§Ã£o de Projetos e Apoio Ã  GestÃ£o de Equipes HÃ­bridas"
     ],
 
-    contactTitle: "INICIAR DIÁLOGO SEGURO",
-    contactSub: "Entre em contato para posições estratégicas e consultoria sob medida",
-    contactCardTitle: "Canais de Comunicação Direta",
+    contactTitle: "INICIAR DIÃLOGO SEGURO",
+    contactSub: "Entre em contato para posiÃ§Ãµes estratÃ©gicas e consultoria sob medida",
+    contactCardTitle: "Canais de ComunicaÃ§Ã£o Direta",
     formSuccess: "Seu briefing foi enviado com sucesso!",
     buttonWhatsapp: "CONVERSAR NO WHATSAPP",
     buttonWork: "VER TRABALHOS",
-    buttonInquire: "SOLICITAR ANÁLISE DE PROCESSO",
+    buttonInquire: "SOLICITAR ANÃLISE DE PROCESSO",
     navWork: "Projetos",
-    navExperience: "Experiência",
+    navExperience: "ExperiÃªncia",
     navSkills: "Especialidades",
     navContact: "Contato"
   },
   EN: {
-    heroTag: "IT Specialist & Strategic Operations",
+    heroTag: "IT Analyst & Strategic Operations",
     heroHeading1: "Zack",
-    heroHeading2: "Neural",
-    heroHeading3: "Engine.",
-    heroSubtext: "Articulating data intelligence, software engineering, solid legal foundations, and process governance to shield and scale corporate operations.",
+    heroHeading2: "Enterprise",
+    heroHeading3: "Studios.",
+    heroSubtext: "Articulating data intelligence, software engineering, solid legal foundations, and administrative process management to scale corporate operations.",
     heroBadge: "IT Oriented towards Business Management, BI, and Risk Analysis",
     aboutTitle: "ABOUT ME",
-    aboutSub: "Operating at the frontier of technology, governance, and compliance.",
-    aboutText1: "My name is Isaac Lamego; I am a multidisciplinary professional who operates at the intersection of advanced technology, corporate governance, and regulatory compliance. With a solid analytical foundation built in systems development, I directed my career to strategic management, process auditing, and business intelligence.",
-    aboutText2: "My career path is marked by a natural leadership instinct, high judgment capability, and decision-making under pressure. These skills are validated by an extremely fast speed of retention and practical application of complex subjects. I possess extensive knowledge of general administration, public routines, and accounting, alongside a robust legal background (with record-time approval in major civil service examinations, achieving top scores in Administrative, Constitutional, Civil, Criminal, and Criminal Procedural Law). Featuring assertive communication, public speaking, and fluent English, I specialize in managing aggressive targets, leading executive meetings, and structuring 100% remote operations globally.",
-    
+    aboutSub: "Operating at the intersection of technology and administrative management.",
+    aboutText1: "My name is Isaac Lamego; I am a multidisciplinary professional working at the intersection of technology and administrative management. With a solid analytical foundation built in systems, I direct my career toward process management, administrative support, and business intelligence.",
+    aboutText2: "I bring a leadership instinct, good judgment, and decision-making under pressure, combined with a fast speed of retention and practical application of complex subjects. I have command of general and public administration routines and accounting, alongside a solid legal background with applied knowledge in Administrative, Constitutional, Civil, Criminal, and Criminal Procedural Law. With assertive communication, good public speaking, and advanced English (written and spoken), I have experience managing targets, leading executive meetings, and supporting remote operations at an international level.",
+
     skillsTitle: "AREAS OF EXPERTISE",
-    skillsSub: "Competencies and technical architecture applied to business metrics",
+    skillsSub: "Competencies and technology applied to business",
     skills: [
       {
-        title: "IT Analyst & Automations",
-        desc: "Engineering and architecture of digital systems, creation of infrastructure, high-conversion landing pages, and smart workflow automations to completely eliminate operational bottlenecks."
+        title: "IT Analysis & Automations",
+        desc: "Support for engineering and solution architecture, creation of digital infrastructure, websites, landing pages, and workflow automations to reduce operational bottlenecks."
       },
       {
-        title: "AI Engineering & Modern Tooling",
-        desc: "High proficiency in the efficient and combined use of the most powerful LLMs on the market. Advanced mastery of Claude, alongside cutting-edge development tools like Bolt.new, Lovable, and Midjourney, accelerating digital product delivery."
+        title: "AI Tools & Modern Technologies",
+        desc: "Combined use of market-leading LLMs (focused on Claude and its models) and platforms such as Bolt.new, Lovable, and Midjourney to accelerate development and digital product creation."
       },
       {
-        title: "Process & Workspace Management",
-        desc: "Organization of custom digital workflows, advanced documentation, and process modeling using Notion as a central operational intelligence and agility hub (Business Agility)."
+        title: "Process & Tool Management",
+        desc: "Organization of workflows, documentation, and process modeling using Notion as an operational intelligence hub, supporting team agility (Business Agility)."
       },
       {
         title: "Technical Knowledge in ERPs",
-        desc: "Deep technical comprehension of the inner data architectures, parameters, workflows, and logical engines of major industry systems such as Protheus, Tasy, Senior ERP, and 4medic."
+        desc: "Understanding of the structure, configuration, data flows, and internal logic of platforms such as Protheus, Tasy, Senior ERP, and 4medic."
       },
       {
-        title: "Audit, Risk & Compliance",
-        desc: "Legal interpretation, application of internal controls, management of highly complex contracts, and information security applied to corporate ecosystems."
+        title: "Administrative Management, Audit & Risk",
+        desc: "Interpretation of legal norms, application of internal controls, support for contract management, and attention to information security in corporate environments."
       },
       {
         title: "Budget Management & Negotiation",
-        desc: "Autonomous capability of pricing, technical structuring, and defending high-ticket commercial proposals in front of national and international decision-makers."
+        desc: "Support in pricing, technical structuring, and defense of commercial proposals before national and international decision-makers."
       }
     ],
 
     eduTitle: "ACADEMIC BACKGROUND",
     eduSub: "Scientific and strategic foundation",
-    edu1_title: "B.S. in Analysis and Systems Development (ADS)",
-    edu1_focus: "Focus: Analytical logic, process modeling, information security, and software engineering applied to businesses.",
+    edu1_title: "Analysis and Systems Development (ADS)",
+    edu1_focus: "IBMR Â· In progress (final assessment pending). Complement: Managerial Processes (IBMR, in progress). Focus: analytical logic, process modeling, operations integration, and quality.",
     edu2_title: "MBA in Business Management & Competitive Strategy",
-    edu2_institution: "IBMR / HSM University (HSMu)",
-    edu2_focus: "Focus: Business Agility, competitive intelligence, corporate leadership, governance, and data-driven decision-making.",
+    edu2_institution: "HSM University (HSMu) Â· Starts after ADS",
+    edu2_focus: "Focus: business management, Business Agility, competitive intelligence, corporate leadership, administrative management, and data-driven decision-making.",
 
     expTitle: "PROFESSIONAL EXPERIENCE",
-    expSub: "Practical applications in roles of absolute trust",
+    expSub: "Practical applications in a position of trust",
     expCompany: "SkyVision Creative Studio",
     expRole: "IT, Process & Administrative Support Analyst (Contractor)",
-    expPeriod: "June 2024 – Present",
+    expPeriod: "June 2024 â€“ Present",
     expPoints: [
-      "Solely responsible for the agency's entire global IT infrastructure, reporting directly to executive leadership with complete autonomy for administrative decision-making alongside the CEO.",
-      "Technical and operational leadership in project delivery for over 30 clients, managing large-scale course launches and implementing high-traffic landing pages, institutional portals, and custom automated processes.",
-      "Strategic utilization of advanced Artificial Intelligence models to optimize coding pipelines and prompt engineering to automate highly complex administrative tasks.",
-      "Centralized project governance, workflow mapping, and process documentation using Notion to guarantee team efficiency and transparency.",
-      "Autonomous handling of administrative routines, deadlines, and international negotiation meetings, serving foreign clients and expats 100% remotely across Switzerland, Germany, France, USA, Portugal, and Brazil.",
-      "Complete design and technical structuring of a modern corporate ecosystem (highly complex integrated application), being solely responsible for formatting and defending the strategic budget valued between R$ 60k and R$ 75k."
+      "Responsible for the IT infrastructure of an international digital services company, working autonomously with executive leadership on administrative and operational decisions.",
+      "Technical and operational support in delivering services and projects for over 30 client companies, including large-scale course launches, landing pages, institutional websites, and process automations.",
+      "Strategic use of artificial intelligence to optimize development workflows, with prompt engineering applied to administrative tasks.",
+      "Centralized administrative project management, organizational workflow mapping, and process documentation in Notion to support team efficiency.",
+      "Administrative routines, deadline management, and international negotiation meetings, with direct service to foreign clients 100% remotely (Switzerland, Germany, France, USA, Portugal, and Brazil).",
+      "Technical structuring of a corporate ecosystem project (highly complex integrated application), including the formatting and defense of a strategic budget between R$ 60k and R$ 75k."
     ],
-    expConsultingTitle: "IT-Based Process Consulting & Intelligence",
+    expConsultingTitle: "IT & Process Consulting",
     expConsultingPoints: [
-      "Application of advanced computer science and database structures to analyze administrative routines, translating complex tax compliance and business rules into automated system optimizations.",
-      "Detailed analysis and design of logic structures and data integrations required to feed ERP ecosystems (Protheus, Tasy, Senior, and 4medic), mitigating operational bottlenecks before software implementation."
+      "Application of computing and database knowledge to analyze administrative routines, translating accounting and administrative management rules into system optimization opportunities.",
+      "Study of the operating logic and data integration of ERP ecosystems (Protheus, Tasy, Senior, and 4medic), identifying operational bottlenecks before technical implementation."
     ],
 
     interestTitle: "FIELDS OF INTEREST",
     interestsList: [
-      "Systems Auditing, Corporate Risk & Compliance",
+      "Systems Auditing, Risk & Administrative Management",
       "IT Operations Management & Digital Transformation",
       "Corporate Performance Analysis & Strategic Planning",
-      "Corporate Project Coordination & Hybrid Team Management"
+      "Project Coordination & Hybrid Team Management Support"
     ],
 
     contactTitle: "INITIATE SECURE DIALOGUE",
@@ -241,7 +241,7 @@ export default function App() {
   const handleInquirySubmit = (e) => {
     e.preventDefault();
     if (!clientData.name || !clientData.email) {
-      setFormValidationError(lang === "PT" ? "Por favor, preencha todos os campos obrigatórios." : "Please fill in all required fields.");
+      setFormValidationError(lang === "PT" ? "Por favor, preencha todos os campos obrigatÃ³rios." : "Please fill in all required fields.");
       return;
     }
     setFormValidationError("");
@@ -250,45 +250,45 @@ export default function App() {
 
   const handleStepOneSubmit = () => {
     if (!clientData.name) {
-      setFormValidationError(lang === "PT" ? "Por favor, preencha seu nome ou organização." : "Please fill in your name or organization.");
+      setFormValidationError(lang === "PT" ? "Por favor, preencha seu nome ou organizaÃ§Ã£o." : "Please fill in your name or organization.");
       return;
     }
     setFormValidationError("");
     setFormStep(2);
   };
 
-  const whatsAppLink = "https://api.whatsapp.com/send?phone=5521990315582&text=Olá%20Zack,%20gostaria%20de%20conversar%20sobre%20seus%20serviços%20de%20TI,%20Gestão%20e%20Inteligência.";
+  const whatsAppLink = "https://api.whatsapp.com/send?phone=5521990315582&text=OlÃ¡%20Zack,%20gostaria%20de%20conversar%20sobre%20seus%20serviÃ§os%20de%20TI,%20GestÃ£o%20e%20InteligÃªncia.";
 
   const erpData = {
     Protheus: {
-      role: lang === "PT" ? "Arquitetura e Parametrização" : "Architecture & Configuration",
-      desc: lang === "PT" 
-        ? "Mapeamento lógico de fluxo de faturamento, estoque e contabilidade. Integração segura de APIs para redução de redundâncias operacionais."
+      role: lang === "PT" ? "Arquitetura e ParametrizaÃ§Ã£o" : "Architecture & Configuration",
+      desc: lang === "PT"
+        ? "Mapeamento lÃ³gico de fluxo de faturamento, estoque e contabilidade. IntegraÃ§Ã£o segura de APIs para reduÃ§Ã£o de redundÃ¢ncias operacionais."
         : "Logical mapping of billing, inventory, and bookkeeping flows. Secure API integrations to reduce manual operations."
     },
     Tasy: {
-      role: lang === "PT" ? "Gestão de Dados e Compliance em Saúde" : "Data Management & Healthcare Compliance",
+      role: lang === "PT" ? "GestÃ£o de Dados em SaÃºde" : "Healthcare Data Management",
       desc: lang === "PT"
-        ? "Foco em fluxos de prontuários, faturamento hospitalar, LGPD e segurança de dados clínicos integrados."
+        ? "Foco em fluxos de prontuÃ¡rios, faturamento hospitalar, LGPD e seguranÃ§a de dados clÃ­nicos integrados."
         : "Focus on electronic health records, clinical billing pipelines, LGPD/GDPR compliance and safety parameters."
     },
     Senior: {
       role: lang === "PT" ? "Modelagem Organizacional & Processos" : "Organizational Modeling & HR Workflows",
       desc: lang === "PT"
-        ? "Integração das frentes de recursos humanos, folha de pagamento estruturada e controles internos fiscais."
+        ? "IntegraÃ§Ã£o das frentes de recursos humanos, folha de pagamento estruturada e controles internos fiscais."
         : "Integration of corporate human capital management, automated payroll databases, and tax workflows."
     },
     "4medic": {
-      role: lang === "PT" ? "Inteligência Operacional em Clínicas" : "Operational Intelligence for Medical Clinics",
+      role: lang === "PT" ? "InteligÃªncia Operacional em ClÃ­nicas" : "Operational Intelligence for Medical Clinics",
       desc: lang === "PT"
-        ? "Simplificação e modelagem ágil de fluxos de caixa, agendamento digitalizado e prontuários rápidos."
+        ? "SimplificaÃ§Ã£o e modelagem Ã¡gil de fluxos de caixa, agendamento digitalizado e prontuÃ¡rios rÃ¡pidos."
         : "Agile modeling of physical and digital cash flows, appointment automation, and quick EHR layouts."
     }
   };
 
   return (
     <div className="relative w-full min-h-screen bg-black text-white font-inter overflow-x-hidden selection:bg-neutral-800 selection:text-white">
-      
+
       <style dangerouslySetInnerHTML={{ __html: `
         @import url("https://db.onlinewebfonts.com/c/8b75d9dcff6a48c35a46656192adf019?family=FSP+DEMO+-+PODIUM+Sharp+4.11");
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
@@ -376,7 +376,7 @@ export default function App() {
             className="flex items-center gap-2 px-5 py-2.5 bg-neutral-900 rounded-full text-xs font-bold uppercase tracking-widest text-emerald-400 border border-neutral-800"
           >
             <Globe className="w-4 h-4" />
-            {lang === "PT" ? "ENGLISH" : "PORTUGUÊS"}
+            {lang === "PT" ? "ENGLISH" : "PORTUGUÃŠS"}
           </button>
 
           <a
@@ -394,11 +394,11 @@ export default function App() {
       <nav className="sticky top-0 z-40 bg-black/85 backdrop-blur-md border-b border-white/5 flex items-center justify-between px-6 sm:px-10 lg:px-16 py-4 lg:py-5">
         <div className="flex items-center gap-4 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           <span className="font-podium text-white font-bold uppercase text-lg sm:text-2xl tracking-widest">
-            ZACKFILMS
+            ZACK STUDIOS
           </span>
           <div className="hidden lg:flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-neutral-900/80 border border-neutral-800">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="font-inter text-[9px] uppercase tracking-widest text-neutral-400 font-bold">IT COMPLIANCE & OPS</span>
+            <span className="font-inter text-[9px] uppercase tracking-widest text-neutral-400 font-bold">IT & ADMIN OPS</span>
           </div>
         </div>
 
@@ -430,11 +430,11 @@ export default function App() {
           <button
             onClick={() => setMuted(!muted)}
             className="p-2.5 rounded-full border border-white/10 text-neutral-400 hover:text-white hover:border-white/20 transition-all"
-            title={muted ? "Ativar Áudio de Fundo" : "Mutar Áudio"}
+            title={muted ? "Ativar Ãudio de Fundo" : "Mutar Ãudio"}
           >
             {muted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-emerald-400" />}
           </button>
-          
+
           <a
             href={whatsAppLink}
             target="_blank"
@@ -535,7 +535,7 @@ export default function App() {
               <div>
                 <p className="font-podium text-white text-lg sm:text-2xl font-bold">100%</p>
                 <p className="font-inter text-neutral-500 text-[10px] tracking-widest uppercase mt-0.5">
-                  {lang === "PT" ? "Operação Remota Segura" : "Secure Remote Operations"}
+                  {lang === "PT" ? "OperaÃ§Ã£o Remota Segura" : "Secure Remote Operations"}
                 </p>
               </div>
               <div>
@@ -547,7 +547,7 @@ export default function App() {
               <div>
                 <p className="font-podium text-white text-lg sm:text-2xl font-bold">R$ 75k</p>
                 <p className="font-inter text-neutral-500 text-[10px] tracking-widest uppercase mt-0.5">
-                  {lang === "PT" ? "Orçamento Único de Projetos" : "Single Project Budgets"}
+                  {lang === "PT" ? "OrÃ§amento Ãšnico de Projetos" : "Single Project Budgets"}
                 </p>
               </div>
             </div>
@@ -558,7 +558,7 @@ export default function App() {
       <section id="about-section" className="w-full py-20 sm:py-28 bg-neutral-950 border-t border-neutral-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            
+
             <div className="lg:col-span-4 space-y-4">
               <span className="text-emerald-400 text-xs font-mono uppercase tracking-[0.25em] font-semibold block">
                 01 // PROFILE
@@ -572,11 +572,11 @@ export default function App() {
               <div className="pt-4 border-t border-neutral-900 space-y-3">
                 <div className="flex items-center gap-2 text-xs text-neutral-400">
                   <Terminal className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Dual Language Operations (PT/EN)</span>
+                  <span>{lang === "PT" ? "InglÃªs avanÃ§ado (escrito e falado)" : "Advanced English (written and spoken)"}</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-neutral-400">
                   <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Sólida Base Jurídica</span>
+                  <span>SÃ³lida Base JurÃ­dica</span>
                 </div>
               </div>
             </div>
@@ -600,10 +600,10 @@ export default function App() {
                 <div className="flex items-center gap-3">
                   <Activity className="w-5 h-5 text-emerald-400" />
                   <span className="text-xs tracking-wider text-neutral-300 font-semibold">
-                    {lang === "PT" ? "Deseja agendar uma reunião ou entrevista executiva?" : "Want to schedule an executive interview?"}
+                    {lang === "PT" ? "Deseja agendar uma reuniÃ£o ou entrevista executiva?" : "Want to schedule an executive interview?"}
                   </span>
                 </div>
-                <a 
+                <a
                   href={whatsAppLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -621,7 +621,7 @@ export default function App() {
 
       <section id="skills-section" className="w-full py-20 sm:py-28 bg-black border-t border-neutral-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-          
+
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16">
             <div>
               <p className="text-emerald-400 text-xs font-mono uppercase tracking-[0.25em] font-semibold mb-2">02 // CAPABILITIES</p>
@@ -634,8 +634,8 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {text.skills.map((skill, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="glass-card p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 relative group overflow-hidden"
               >
                 <span className="absolute right-4 top-4 text-neutral-900 font-podium text-3xl select-none group-hover:text-emerald-950/40 transition-colors">
@@ -669,17 +669,17 @@ export default function App() {
       <section className="w-full py-16 sm:py-20 bg-neutral-950 border-t border-neutral-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-black p-6 sm:p-10 border border-neutral-900">
-            
+
             <div className="lg:col-span-5 space-y-4">
               <span className="text-[10px] font-mono text-emerald-400 uppercase tracking-widest">
                 ERP COMPREHENSION MODEL
               </span>
               <h3 className="font-podium text-xl sm:text-2xl uppercase text-white">
-                {lang === "PT" ? "Lógica e Estrutura de ERPs" : "ERPs Functional Logic"}
+                {lang === "PT" ? "LÃ³gica e Estrutura de ERPs" : "ERPs Functional Logic"}
               </h3>
               <p className="text-xs text-neutral-400 leading-relaxed">
-                {lang === "PT" 
-                  ? "Selecione os módulos abaixo para visualizar a minha aptidão e conhecimento analítico de parametrização e modelagem operacional em sistemas de mercado:"
+                {lang === "PT"
+                  ? "Selecione os mÃ³dulos abaixo para visualizar a minha aptidÃ£o e conhecimento analÃ­tico de parametrizaÃ§Ã£o e modelagem operacional em sistemas de mercado:"
                   : "Select any system below to inspect my analytical competence and parametric structural understanding:"}
               </p>
 
@@ -689,8 +689,8 @@ export default function App() {
                     key={erp}
                     onClick={() => setActiveERP(erp)}
                     className={`px-3 py-1.5 text-xs uppercase font-mono font-bold transition-all ${
-                      activeERP === erp 
-                        ? "bg-white text-black" 
+                      activeERP === erp
+                        ? "bg-white text-black"
                         : "bg-neutral-900 text-neutral-400 hover:text-white"
                     }`}
                   >
@@ -705,7 +705,7 @@ export default function App() {
                 <span className="text-[10px] font-mono text-neutral-500 uppercase">SYS_LOGIC : {activeERP}</span>
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               </div>
-              
+
               <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wider">
                 {erpData[activeERP].role}
               </h4>
@@ -719,8 +719,8 @@ export default function App() {
                   <span className="text-[11px] font-mono text-neutral-400">REST / SOAP Verified</span>
                 </div>
                 <div>
-                  <span className="text-[9px] text-neutral-600 block uppercase">Compliance Mapping</span>
-                  <span className="text-[11px] font-mono text-neutral-400">100% Tax Compliant</span>
+                  <span className="text-[9px] text-neutral-600 block uppercase">Process Mapping</span>
+                  <span className="text-[11px] font-mono text-neutral-400">Fiscal Flows Mapped</span>
                 </div>
               </div>
             </div>
@@ -731,7 +731,7 @@ export default function App() {
 
       <section id="experience-section" className="w-full py-20 sm:py-28 bg-black border-t border-neutral-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-          
+
           <div className="max-w-xl mb-12 sm:mb-16">
             <span className="text-emerald-400 text-xs font-mono uppercase tracking-[0.25em] font-semibold block mb-2">
               03 // TIMELINE
@@ -745,7 +745,7 @@ export default function App() {
           </div>
 
           <div className="space-y-12">
-            
+
             <div className="p-6 sm:p-10 bg-neutral-950 border border-neutral-900 rounded-sm relative">
               <div className="absolute -top-3.5 left-6 bg-emerald-500 text-black text-[9px] font-mono font-bold tracking-widest uppercase px-3 py-1">
                 {text.expPeriod}
@@ -781,7 +781,7 @@ export default function App() {
 
             <div className="p-6 sm:p-10 bg-neutral-950 border border-neutral-900 rounded-sm relative">
               <div className="absolute -top-3.5 left-6 bg-neutral-900 text-white text-[9px] font-mono font-bold tracking-widest uppercase px-3 py-1 border border-neutral-850">
-                {lang === "PT" ? "EXTENSÃO DE PROJETOS" : "ADDITIONAL ROLES"}
+                {lang === "PT" ? "EXTENSÃƒO DE PROJETOS" : "ADDITIONAL ROLES"}
               </div>
 
               <div className="border-b border-neutral-900 pb-4 mb-6">
@@ -810,7 +810,7 @@ export default function App() {
       <section className="w-full py-20 bg-neutral-950 border-t border-neutral-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            
+
             <div className="lg:col-span-4 space-y-4">
               <span className="text-emerald-400 text-xs font-mono uppercase tracking-[0.25em] font-semibold block">
                 04 // EDUCATION
@@ -859,11 +859,11 @@ export default function App() {
           <h3 className="font-podium text-lg text-white uppercase text-center mb-10 tracking-widest">
             {text.interestTitle}
           </h3>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {text.interestsList.map((interest, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="p-4 bg-neutral-950 border border-neutral-900 text-center text-xs text-neutral-300 font-semibold tracking-wide uppercase flex items-center justify-center min-h-[80px]"
               >
                 {interest}
@@ -875,7 +875,7 @@ export default function App() {
 
       <section id="contact-section" className="w-full py-20 sm:py-28 bg-neutral-950 border-t border-neutral-900">
         <div className="max-w-4xl mx-auto px-6">
-          
+
           <div className="text-center mb-12">
             <span className="text-emerald-400 text-xs font-mono uppercase tracking-[0.2em] block mb-2">
               05 // TRANSMIT INFORMATION
@@ -889,7 +889,7 @@ export default function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
-            
+
             <div className="md:col-span-5 bg-black border border-neutral-900 p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <h3 className="font-podium text-sm text-white uppercase tracking-widest border-b border-neutral-900 pb-3 mb-4">
@@ -942,7 +942,7 @@ export default function App() {
                 </div>
               ) : (
                 <div className="space-y-4">
-                  
+
                   {formValidationError && (
                     <div className="p-3 bg-red-950/45 border border-red-800 text-red-200 text-xs flex items-center gap-2">
                       <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
@@ -958,10 +958,10 @@ export default function App() {
                     <div className="space-y-4">
                       <div>
                         <label className="text-[10px] uppercase text-neutral-500 tracking-wider block font-bold mb-1">
-                          {lang === "PT" ? "Seu Nome / Organização *" : "Your Name / Organization *"}
+                          {lang === "PT" ? "Seu Nome / OrganizaÃ§Ã£o *" : "Your Name / Organization *"}
                         </label>
-                        <input 
-                          type="text" 
+                        <input
+                          type="text"
                           required
                           value={clientData.name}
                           onChange={(e) => setClientData({ ...clientData, name: e.target.value })}
@@ -972,7 +972,7 @@ export default function App() {
 
                       <div>
                         <label className="text-[10px] uppercase text-neutral-500 tracking-wider block font-bold mb-1">
-                          {lang === "PT" ? "Foco do Serviço" : "Primary Focus"}
+                          {lang === "PT" ? "Foco do ServiÃ§o" : "Primary Focus"}
                         </label>
                         <select
                           value={clientData.serviceType}
@@ -991,7 +991,7 @@ export default function App() {
                         onClick={handleStepOneSubmit}
                         className="w-full py-3 bg-white hover:bg-neutral-200 text-black text-xs font-bold uppercase tracking-widest transition-colors flex items-center justify-center gap-1"
                       >
-                        {lang === "PT" ? "Avançar" : "Continue"}
+                        {lang === "PT" ? "AvanÃ§ar" : "Continue"}
                         <ArrowRight className="w-4 h-4" />
                       </button>
                     </div>
@@ -1001,8 +1001,8 @@ export default function App() {
                         <label className="text-[10px] uppercase text-neutral-500 tracking-wider block font-bold mb-1">
                           {lang === "PT" ? "E-mail de Contato *" : "Contact Email *"}
                         </label>
-                        <input 
-                          type="email" 
+                        <input
+                          type="email"
                           required
                           value={clientData.email}
                           onChange={(e) => setClientData({ ...clientData, email: e.target.value })}
@@ -1013,9 +1013,9 @@ export default function App() {
 
                       <div>
                         <label className="text-[10px] uppercase text-neutral-500 tracking-wider block font-bold mb-1">
-                          {lang === "PT" ? "Notas do Projeto / Descrição" : "Project Brief / Objectives"}
+                          {lang === "PT" ? "Notas do Projeto / DescriÃ§Ã£o" : "Project Brief / Objectives"}
                         </label>
-                        <textarea 
+                        <textarea
                           rows="3"
                           value={clientData.notes}
                           onChange={(e) => setClientData({ ...clientData, notes: e.target.value })}
@@ -1053,18 +1053,21 @@ export default function App() {
 
       <footer className="w-full bg-black border-t border-neutral-900 py-12 text-neutral-500 text-xs font-inter">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 flex flex-col md:flex-row justify-between gap-8">
-          
+
           <div className="space-y-3 max-w-xs">
             <span className="font-podium text-white text-md tracking-widest">
               ZACK ENGINE
             </span>
             <p className="leading-relaxed text-[11px]">
-              {lang === "PT" 
-                ? "Operando na interseção de tecnologia avançada, compliance corporativo e automações de alto valor."
-                : "Operating at the nexus of advanced software, legal framework audit, and high-value custom automations."}
+              {lang === "PT"
+                ? "Operando na interseÃ§Ã£o entre tecnologia, gestÃ£o administrativa e automaÃ§Ãµes de alto valor."
+                : "Operating at the intersection of technology, administrative management, and high-value automations."}
             </p>
             <p className="text-[10px] text-neutral-700 font-mono">
-              © 2026 ZACKFILMS Inc. // Secure Remote Network.
+              Â© 2026 ZACKFILMS Inc. // Secure Remote Network.
+            </p>
+            <p className="text-[10px] text-neutral-700 font-mono">
+              {lang === "PT" ? "Todos os direitos reservados." : "All rights reserved."}
             </p>
           </div>
 
@@ -1084,7 +1087,7 @@ export default function App() {
               <ul className="space-y-1 text-neutral-600 font-mono text-[9px] uppercase">
                 <li>STATUS: SECURE</li>
                 <li>IP: LOCALHOST</li>
-                <li>LANG: PORTUGUÊS / ENGLISH</li>
+                <li>LANG: PORTUGUÃŠS / ENGLISH</li>
                 <li>TEL: +55 21 99031-5582</li>
               </ul>
             </div>
@@ -1095,5 +1098,4 @@ export default function App() {
 
     </div>
   );
-}
-
+        }
