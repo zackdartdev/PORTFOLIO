@@ -898,14 +898,14 @@ export default function App() {
                 <div className="space-y-4">
                   <div>
                     <span className="text-[9px] uppercase text-neutral-500 block">General / AI Systems</span>
-                    <a href="mailto:neuroforgezack@gmail.com" className="text-xs text-emerald-400 hover:underline font-mono">
-                      neuroforgezack@gmail.com
+                    <a href="mailto:contato.zackstudio@gmail.com" className="text-xs text-emerald-400 hover:underline font-mono">
+                      contato.zackstudio@gmail.com
                     </a>
                   </div>
                   <div>
-                    <span className="text-[9px] uppercase text-neutral-500 block">Creative Studio / Operations</span>
-                    <a href="mailto:contato.zackfilms@gmail.com" className="text-xs text-emerald-400 hover:underline font-mono">
-                      contato.zackfilms@gmail.com
+                    <span className="text-[9px] uppercase text-neutral-500 block">Intelligence Studio / IT Operations</span>
+                    <a href="mailto:neuroforgezack@gmail.com" className="text-xs text-emerald-400 hover:underline font-mono">
+                      neuroforgezack@gmail.com
                     </a>
                   </div>
                   <div>
