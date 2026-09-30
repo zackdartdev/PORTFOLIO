@@ -82,10 +82,10 @@ const TRANSLATIONS = {
     expSub: "Aplicações práticas em cargo de confiança",
     expCompany: "SkyVision Creative Studio",
     expRole: "Analista de TI, Processos e Suporte Administrativo (Contractor)",
-    expPeriod: "Junho de 2024 – Presente",
+    expPeriod: "Junho de 2024 – Setembro de 2026",
     expPoints: [
       "Responsável pela infraestrutura de TI de uma empresa internacional de serviços digitais, atuando com autonomia junto à liderança executiva em decisões administrativas e operacionais.",
-      "Apoio técnico e operacional na entrega de serviços e projetos para mais de 30 empresas atendidas, incluindo lançamentos de cursos de grande escala, landing pages, sites institucionais e automações de processos.",
+      "Apoio técnico e operacional na entrega de serviços e projetos para mais de 30 empresas atendidas, incluindo apoio operacional em lançamentos de cursos de grande escala, landing pages, sites institucionais e automações de processos.",
       "Uso estratégico de inteligências artificiais para otimizar fluxos de desenvolvimento e engenharia de prompt aplicada a tarefas administrativas.",
       "Centralização da gestão administrativa de projetos, mapeamento de fluxos organizacionais e documentação de processos no Notion para apoiar a eficiência das equipes.",
       "Condução de rotinas administrativas, gestão de prazos e reuniões de negociação internacionais, com atendimento direto a clientes estrangeiros em regime 100% remoto (Suíça, Alemanha, França, EUA, Portugal e Brasil).",
@@ -170,10 +170,10 @@ const TRANSLATIONS = {
     expSub: "Practical applications in a position of trust",
     expCompany: "SkyVision Creative Studio",
     expRole: "IT, Process & Administrative Support Analyst (Contractor)",
-    expPeriod: "June 2024 – Present",
+    expPeriod: "June 2024 – September 2026",
     expPoints: [
       "Responsible for the IT infrastructure of an international digital services company, working autonomously with executive leadership on administrative and operational decisions.",
-      "Technical and operational support in delivering services and projects for over 30 client companies, including large-scale course launches, landing pages, institutional websites, and process automations.",
+      "Technical and operational support in delivering services and projects for over 30 client companies, including operational support large-scale course launches, landing pages, institutional websites, and process automations.",
       "Strategic use of artificial intelligence to optimize development workflows, with prompt engineering applied to administrative tasks.",
       "Centralized administrative project management, organizational workflow mapping, and process documentation in Notion to support team efficiency.",
       "Administrative routines, deadline management, and international negotiation meetings, with direct service to foreign clients 100% remotely (Switzerland, Germany, France, USA, Portugal, and Brazil).",
@@ -762,7 +762,7 @@ export default function App() {
                 </div>
                 <div className="text-right">
                   <span className="text-xs px-2.5 py-1 bg-neutral-900 border border-neutral-800 text-neutral-400 font-mono uppercase">
-                    Switzerland, France, USA, PT, BR (100% Remote)
+                    Switzerland, France, USA, PT, BR, Germany (100% Remote)
                   </span>
                 </div>
               </div>
@@ -898,14 +898,14 @@ export default function App() {
                 <div className="space-y-4">
                   <div>
                     <span className="text-[9px] uppercase text-neutral-500 block">General / AI Systems</span>
-                    <a href="mailto:contato.zackstudio@gmail.com" className="text-xs text-emerald-400 hover:underline font-mono">
-                      contato.zackstudio@gmail.com
+                    <a href="mailto:neuroforgezack@gmail.com" className="text-xs text-emerald-400 hover:underline font-mono">
+                      neuroforgezack@gmail.com 
                     </a>
                   </div>
                   <div>
                     <span className="text-[9px] uppercase text-neutral-500 block">Intelligence Studio / IT Operations</span>
-                    <a href="mailto:neuroforgezack@gmail.com" className="text-xs text-emerald-400 hover:underline font-mono">
-                      neuroforgezack@gmail.com
+                    <a href="mailto:contato.zackstudio@gmail.com" className="text-xs text-emerald-400 hover:underline font-mono">
+                      contato.zackstudio@gmail.com
                     </a>
                   </div>
                   <div>
