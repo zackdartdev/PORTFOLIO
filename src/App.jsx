@@ -73,13 +73,13 @@ const TRANSLATIONS = {
     eduTitle: "FORMAÇÃO ACADÊMICA",
     eduSub: "Fundamentação científica e estratégica",
     edu1_title: "Análise e Desenvolvimento de Sistemas (ADS)",
-    edu1_focus: "IBMR · Em conclusão (última avaliação pendente). Complemento: Processos Gerenciais (IBMR, em conclusão). Foco: lógica analítica, modelagem de processos, integração de operações e qualidade.",
+    edu1_institution: "IBMR",
+    edu1_focus: "Unidade curricular cursada: Processos Gerenciais — Administração e Integração de Processos e Qualidade. Foco: lógica analítica, modelagem de processos, integração de operações e qualidade.",
     edu2_title: "MBA em Gestão Empresarial e Estratégia Competitiva",
     edu2_institution: "HSM University (HSMu) · Início após o ADS",
     edu2_focus: "Foco: gestão empresarial, Business Agility, inteligência competitiva, liderança corporativa, gestão administrativa e tomada de decisão orientada a dados.",
 
     expTitle: "EXPERIÊNCIA PROFISSIONAL",
-    expSub: "Aplicações práticas em cargo de confiança",
     expCompany: "SkyVision Creative Studio",
     expRole: "Analista de TI, Processos e Suporte Administrativo (Contractor)",
     expPeriod: "Junho de 2024 – Setembro de 2026",
@@ -161,13 +161,13 @@ const TRANSLATIONS = {
     eduTitle: "ACADEMIC BACKGROUND",
     eduSub: "Scientific and strategic foundation",
     edu1_title: "Analysis and Systems Development (ADS)",
-    edu1_focus: "IBMR · In progress (final assessment pending). Complement: Managerial Processes (IBMR, in progress). Focus: analytical logic, process modeling, operations integration, and quality.",
+    edu1_institution: "IBMR",
+    edu1_focus: "Course unit completed: Managerial Processes — Administration and Integration of Processes and Quality. Focus: analytical logic, process modeling, operations integration, and quality.",
     edu2_title: "MBA in Business Management & Competitive Strategy",
     edu2_institution: "HSM University (HSMu) · Starts after ADS",
     edu2_focus: "Focus: business management, Business Agility, competitive intelligence, corporate leadership, administrative management, and data-driven decision-making.",
 
     expTitle: "PROFESSIONAL EXPERIENCE",
-    expSub: "Practical applications in a position of trust",
     expCompany: "SkyVision Creative Studio",
     expRole: "IT, Process & Administrative Support Analyst (Contractor)",
     expPeriod: "June 2024 – September 2026",
@@ -293,8 +293,15 @@ export default function App() {
         @import url("https://db.onlinewebfonts.com/c/8b75d9dcff6a48c35a46656192adf019?family=FSP+DEMO+-+PODIUM+Sharp+4.11");
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
+        /* Fonte de reserva só para símbolos (substitui o glifo "DEMO" da fonte Podium) */
+        @font-face {
+          font-family: "Podium Symbols";
+          src: local("Impact"), local("Arial Black"), local("Roboto Black"), local("sans-serif-black");
+          unicode-range: U+0021-002B, U+002F, U+003D, U+0040, U+00B7, U+2013-2014;
+        }
+
         .font-podium {
-          font-family: "FSP DEMO - PODIUM Sharp 4.11", "Impact", "Arial Black", sans-serif;
+          font-family: "Podium Symbols", "FSP DEMO - PODIUM Sharp 4.11", "Impact", "Arial Black", sans-serif;
           letter-spacing: 0.05em;
         }
         .font-inter {
@@ -739,9 +746,6 @@ export default function App() {
             <h2 className="font-podium text-3xl sm:text-5xl uppercase tracking-wider">
               {text.expTitle}
             </h2>
-            <p className="text-xs sm:text-sm text-neutral-500 font-mono">
-              {text.expSub}
-            </p>
           </div>
 
           <div className="space-y-12">
@@ -829,6 +833,9 @@ export default function App() {
                 <h3 className="font-podium text-lg text-white uppercase">
                   {text.edu1_title}
                 </h3>
+                <p className="text-xs text-emerald-300 font-bold uppercase font-mono tracking-wider">
+                  {text.edu1_institution}
+                </p>
                 <div className="h-px bg-neutral-900" />
                 <p className="text-xs text-neutral-400 leading-relaxed font-normal">
                   {text.edu1_focus}
