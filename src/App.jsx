@@ -70,11 +70,49 @@ const TRANSLATIONS = {
       }
     ],
 
+    navAI: "IA",
+    aiTitle: "ESPECIALIZAÇÃO EM IA",
+    aiSub: "LLMs, modelos locais e IA generativa aplicados a decisão e dados",
+    aiIntro: "Minha especialização é orientada a LLMs, modelos de linguagem locais e inteligência artificial generativa, com foco em agentes, automações e sistemas de apoio à tomada de decisão e ao tratamento de dados.",
+    aiGroups: [
+      {
+        title: "Modelos Locais e LLMs",
+        items: ["Qwen", "Ollama", "LM Studio"]
+      },
+      {
+        title: "Agentes e Orquestração",
+        items: ["Claude Code", "Claude Cowork", "Codex", "Microsoft Copilot Studio", "Automações de fluxos"]
+      },
+      {
+        title: "IA Generativa e Machine Learning",
+        items: ["IA generativa", "Machine Learning", "LLMs para tomada de decisão", "Tratamento de dados"]
+      },
+      {
+        title: "Em Aprofundamento",
+        learning: true,
+        items: ["Engenharia de prompts avançada", "Saídas estruturadas (JSON) e tool use", "RAG e embeddings", "Bancos vetoriais", "MCP (Model Context Protocol)", "Avaliação de respostas (evals)", "Quantização de modelos (GGUF)", "Python e pandas", "Hugging Face"]
+      }
+    ],
+    projectLabel: "PROJETO",
+    projectStatus: "Em desenvolvimento",
+    projectTitle: "Gotham — Assistente Local de Apoio à Decisão com LLMs",
+    projectDesc: "Agente de IA executado localmente, com modelos Qwen servidos por Ollama ou LM Studio, que recebe dados operacionais (planilhas e CSV), faz o tratamento e a organização das informações e gera análises e recomendações para apoiar decisões de gestão, sem enviar dados a serviços externos.",
+    projectPoints: [
+      "Tratamento e padronização de dados antes da análise, para que o modelo trabalhe com informação limpa e consistente.",
+      "Agentes orquestrados com ferramentas, integrando a interface web ao modelo local por uma API em Node.js.",
+      "Testes automatizados do fluxo e validação das respostas do modelo, com versionamento no Git e GitHub."
+    ],
+    projectStack: ["Qwen", "Ollama", "LM Studio", "Node.js", "Next.js", "React", "Git / GitHub", "Testes automatizados"],
+
     eduTitle: "FORMAÇÃO ACADÊMICA",
     eduSub: "Fundamentação científica e estratégica",
     edu1_title: "Análise e Desenvolvimento de Sistemas (ADS)",
     edu1_institution: "IBMR",
-    edu1_focus: "Unidade curricular cursada: Processos Gerenciais — Administração e Integração de Processos e Qualidade. Foco: lógica analítica, modelagem de processos, integração de operações e qualidade.",
+    edu1_focus: "Formação voltada ao desenvolvimento de software: lógica de programação, análise e modelagem de sistemas, banco de dados e desenvolvimento web. Na prática, tenho proficiência em Node.js, Next.js, React, Git, GitHub e testes automatizados, usados para construir, versionar e validar aplicações com qualidade.",
+    edu1_stackLabel: "Stack e práticas",
+    edu1_stack: ["Node.js", "Next.js", "React", "Git", "GitHub", "Testes automatizados"],
+    edu1_complementLabel: "Unidade curricular complementar",
+    edu1_complement: "Processos Gerenciais — Administração e Integração de Processos e Qualidade. Esta unidade complementa a formação técnica: une meu conhecimento em TI à compreensão de gestão e administração, o que me permite traduzir demandas de negócio em soluções de software e enxergar processos, qualidade e resultados além do código.",
     edu2_title: "MBA em Gestão Empresarial e Estratégia Competitiva",
     edu2_institution: "HSM University (HSMu) · Início após o ADS",
     edu2_focus: "Foco: gestão empresarial, Business Agility, inteligência competitiva, liderança corporativa, gestão administrativa e tomada de decisão orientada a dados.",
@@ -158,11 +196,49 @@ const TRANSLATIONS = {
       }
     ],
 
+    navAI: "AI",
+    aiTitle: "AI SPECIALIZATION",
+    aiSub: "LLMs, local models, and generative AI applied to decisions and data",
+    aiIntro: "My specialization is oriented toward LLMs, local language models, and generative artificial intelligence, focused on agents, automations, and systems that support decision-making and data processing.",
+    aiGroups: [
+      {
+        title: "Local Models & LLMs",
+        items: ["Qwen", "Ollama", "LM Studio"]
+      },
+      {
+        title: "Agents & Orchestration",
+        items: ["Claude Code", "Claude Cowork", "Codex", "Microsoft Copilot Studio", "Workflow automations"]
+      },
+      {
+        title: "Generative AI & Machine Learning",
+        items: ["Generative AI", "Machine Learning", "LLMs for decision-making", "Data processing"]
+      },
+      {
+        title: "Currently Deepening",
+        learning: true,
+        items: ["Advanced prompt engineering", "Structured outputs (JSON) & tool use", "RAG & embeddings", "Vector databases", "MCP (Model Context Protocol)", "Response evaluation (evals)", "Model quantization (GGUF)", "Python & pandas", "Hugging Face"]
+      }
+    ],
+    projectLabel: "PROJECT",
+    projectStatus: "In development",
+    projectTitle: "Gotham — Local LLM-Powered Decision Support Assistant",
+    projectDesc: "A locally run AI agent, using Qwen models served by Ollama or LM Studio, that ingests operational data (spreadsheets and CSV), cleans and organizes the information, and produces analyses and recommendations to support management decisions, without sending data to external services.",
+    projectPoints: [
+      "Data cleaning and standardization before analysis, so the model works with clean and consistent information.",
+      "Tool-orchestrated agents, connecting the web interface to the local model through a Node.js API.",
+      "Automated tests of the workflow and validation of model responses, versioned with Git and GitHub."
+    ],
+    projectStack: ["Qwen", "Ollama", "LM Studio", "Node.js", "Next.js", "React", "Git / GitHub", "Automated testing"],
+
     eduTitle: "ACADEMIC BACKGROUND",
     eduSub: "Scientific and strategic foundation",
     edu1_title: "Analysis and Systems Development (ADS)",
     edu1_institution: "IBMR",
-    edu1_focus: "Course unit completed: Managerial Processes — Administration and Integration of Processes and Quality. Focus: analytical logic, process modeling, operations integration, and quality.",
+    edu1_focus: "Software development–oriented program: programming logic, systems analysis and modeling, databases, and web development. In practice, I am proficient in Node.js, Next.js, React, Git, GitHub, and automated testing, which I use to build, version, and validate quality applications.",
+    edu1_stackLabel: "Stack & practices",
+    edu1_stack: ["Node.js", "Next.js", "React", "Git", "GitHub", "Automated testing"],
+    edu1_complementLabel: "Complementary course unit",
+    edu1_complement: "Managerial Processes — Administration and Integration of Processes and Quality. This unit complements the technical training: it connects my IT knowledge with an understanding of management and administration, allowing me to translate business needs into software solutions and see processes, quality, and results beyond the code.",
     edu2_title: "MBA in Business Management & Competitive Strategy",
     edu2_institution: "HSM University (HSMu) · Starts after ADS",
     edu2_focus: "Focus: business management, Business Agility, competitive intelligence, corporate leadership, administrative management, and data-driven decision-making.",
@@ -173,7 +249,7 @@ const TRANSLATIONS = {
     expPeriod: "June 2024 – September 2026",
     expPoints: [
       "Responsible for the IT infrastructure of an international digital services company, working autonomously with executive leadership on administrative and operational decisions.",
-      "Technical and operational support in delivering services and projects for over 30 client companies, including operational support large-scale course launches, landing pages, institutional websites, and process automations.",
+      "Technical and operational support in delivering services and projects for over 30 client companies, including operational support in large-scale course launches, landing pages, institutional websites, and process automations.",
       "Strategic use of artificial intelligence to optimize development workflows, with prompt engineering applied to administrative tasks.",
       "Centralized administrative project management, organizational workflow mapping, and process documentation in Notion to support team efficiency.",
       "Administrative routines, deadline management, and international negotiation meetings, with direct service to foreign clients 100% remotely (Switzerland, Germany, France, USA, Portugal, and Brazil).",
@@ -367,6 +443,9 @@ export default function App() {
           <button onClick={() => scrollToId("skills-section")} className="font-podium text-white uppercase text-2xl tracking-wide hover:text-emerald-400 transition-all">
             {text.navSkills}
           </button>
+          <button onClick={() => scrollToId("ai-section")} className="font-podium text-white uppercase text-2xl tracking-wide hover:text-emerald-400 transition-all">
+            {text.navAI}
+          </button>
           <button onClick={() => scrollToId("experience-section")} className="font-podium text-white uppercase text-2xl tracking-wide hover:text-emerald-400 transition-all">
             {text.navExperience}
           </button>
@@ -411,6 +490,9 @@ export default function App() {
           </button>
           <button onClick={() => scrollToId("skills-section")} className="font-inter text-[11px] text-neutral-400 tracking-widest uppercase hover:text-white transition-colors">
             {text.navSkills}
+          </button>
+          <button onClick={() => scrollToId("ai-section")} className="font-inter text-[11px] text-neutral-400 tracking-widest uppercase hover:text-white transition-colors">
+            {text.navAI}
           </button>
           <button onClick={() => scrollToId("experience-section")} className="font-inter text-[11px] text-neutral-400 tracking-widest uppercase hover:text-white transition-colors">
             {text.navExperience}
@@ -732,6 +814,102 @@ export default function App() {
         </div>
       </section>
 
+      <section id="ai-section" className="w-full py-20 sm:py-28 bg-neutral-950 border-t border-neutral-900">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+
+          <div className="max-w-2xl mb-12 sm:mb-16 space-y-4">
+            <span className="text-emerald-400 text-xs font-mono uppercase tracking-[0.25em] font-semibold block">
+              AI // SPECIALIZATION
+            </span>
+            <h2 className="font-podium text-3xl sm:text-5xl uppercase tracking-wider">
+              {text.aiTitle}
+            </h2>
+            <p className="text-xs text-neutral-500 font-mono tracking-widest uppercase">
+              {text.aiSub}
+            </p>
+            <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal pt-2">
+              {text.aiIntro}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {text.aiGroups.map((group) => (
+              <div
+                key={group.title}
+                className={`p-6 bg-black rounded-sm space-y-4 ${
+                  group.learning
+                    ? "border border-dashed border-emerald-500/30"
+                    : "border border-neutral-900"
+                }`}
+              >
+                <div className="w-10 h-10 rounded-sm bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+                  {group.learning ? (
+                    <Sparkles className="w-5 h-5 text-emerald-400" />
+                  ) : (
+                    <Cpu className="w-5 h-5 text-emerald-400" />
+                  )}
+                </div>
+                <h3 className="font-podium text-base text-white uppercase">
+                  {group.title}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <span
+                      key={item}
+                      className="px-2.5 py-1 text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-300 bg-emerald-500/10 border border-emerald-500/20 rounded-sm"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 p-6 sm:p-10 bg-black border border-neutral-900 rounded-sm relative">
+            <div className="absolute -top-3.5 left-6 bg-emerald-500 text-black text-[9px] font-mono font-bold tracking-widest uppercase px-3 py-1">
+              {text.projectLabel}
+            </div>
+
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-neutral-900 pb-6 mb-6">
+              <h3 className="font-podium text-xl sm:text-2xl text-white uppercase">
+                {text.projectTitle}
+              </h3>
+              <span className="self-start md:self-auto text-xs px-2.5 py-1 bg-neutral-900 border border-neutral-800 text-emerald-400 font-mono uppercase">
+                {text.projectStatus}
+              </span>
+            </div>
+
+            <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal mb-6">
+              {text.projectDesc}
+            </p>
+
+            <ul className="space-y-4 mb-6">
+              {text.projectPoints.map((point, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <ArrowUpRight className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-normal">
+                    {point}
+                  </p>
+                </li>
+              ))}
+            </ul>
+
+            <div className="flex flex-wrap gap-2 pt-4 border-t border-neutral-900">
+              {text.projectStack.map((tech) => (
+                <span
+                  key={tech}
+                  className="px-2.5 py-1 text-[10px] font-mono font-bold uppercase tracking-wider text-neutral-300 bg-neutral-900 border border-neutral-800 rounded-sm"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <section id="experience-section" className="w-full py-20 sm:py-28 bg-black border-t border-neutral-900">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
 
@@ -836,6 +1014,31 @@ export default function App() {
                 <p className="text-xs text-neutral-400 leading-relaxed font-normal">
                   {text.edu1_focus}
                 </p>
+
+                <div className="space-y-2">
+                  <span className="text-[9px] font-mono uppercase tracking-widest text-neutral-500 block">
+                    {text.edu1_stackLabel}
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    {text.edu1_stack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2.5 py-1 text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-300 bg-emerald-500/10 border border-emerald-500/20 rounded-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-neutral-900 space-y-2">
+                  <span className="text-[9px] font-mono uppercase tracking-widest text-neutral-500 block">
+                    {text.edu1_complementLabel}
+                  </span>
+                  <p className="text-[11px] text-neutral-500 leading-relaxed font-normal">
+                    {text.edu1_complement}
+                  </p>
+                </div>
               </div>
 
               <div className="p-6 bg-black border border-neutral-900 rounded-sm space-y-4">
