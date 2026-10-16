@@ -293,15 +293,11 @@ export default function App() {
         @import url("https://db.onlinewebfonts.com/c/8b75d9dcff6a48c35a46656192adf019?family=FSP+DEMO+-+PODIUM+Sharp+4.11");
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
-        /* Fonte de reserva só para símbolos (substitui o glifo "DEMO" da fonte Podium) */
-        @font-face {
-          font-family: "Podium Symbols";
-          src: local("Impact"), local("Arial Black"), local("Roboto Black"), local("sans-serif-black");
-          unicode-range: U+0021-002B, U+002F, U+003D, U+0040, U+00B7, U+2013-2014;
-        }
+        /* Anton carregada SÓ com os símbolos (substitui o glifo "DEMO" da Podium) */
+        @import url("https://fonts.googleapis.com/css2?family=Anton&text=%21%22%23%24%25%26%27%28%29%2A%2B%2F%3D%40%C2%B7%E2%80%93%E2%80%94&display=swap");
 
         .font-podium {
-          font-family: "Podium Symbols", "FSP DEMO - PODIUM Sharp 4.11", "Impact", "Arial Black", sans-serif;
+          font-family: "Anton", "FSP DEMO - PODIUM Sharp 4.11", "Impact", "Arial Black", sans-serif;
           letter-spacing: 0.05em;
         }
         .font-inter {
@@ -1105,4 +1101,4 @@ export default function App() {
 
     </div>
   );
-                    }
+}
